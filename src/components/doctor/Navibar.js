@@ -1,10 +1,11 @@
+import "./doctor.css";
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 function Navibar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a className="navbar-brand" href="/">
           Queue
         </a>
         <button
@@ -36,12 +37,12 @@ function Navibar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="/">
+              <a className="nav-link" href="/">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="/">
+              <a className="nav-link" href="/">
                 Contact
               </a>
             </li>

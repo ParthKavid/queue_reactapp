@@ -1,0 +1,73 @@
+body {
+    background-image: url("../../Images/doctor_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #2e4b42 !important;
+}
+/* /////////////////////////        MainBody */
+.main{
+    background-color: #7bc0a991;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+.clinicTime{
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #ffffff5c;
+    
+}
+
+.doctorContainer{
+    justify-content: center;
+}
+
+.btnTokenRunning:hover{
+    background-color: rgb(14, 121, 179);
+}
+.btnTokenRunning
+{
+    border-radius: 25px;
+    font-size: 50px;
+    background-color: rgb(43, 162, 226);
+}
+
+.elemCenter{
+    justify-content: center;
+}
+
+.patientWaiting{
+    color: red;
+    font-weight: 500;
+}
+
+.headingStyle{
+    color: white;
+    text-shadow: 1px 2px #509d85;
+}
+
+
+/* ////////////////////////////////    Footer */
+.footer{
+    position: fixed;
+    left:50%;
+    bottom: 20px;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    /* position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center; */
+}
+
+hr {
+    border-width: 2px;
+}
