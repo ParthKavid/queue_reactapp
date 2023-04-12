@@ -26,6 +26,9 @@ body {
     
 }
 
+.startTime, .endTime{
+    padding: 5px;
+}
 .doctorContainer{
     justify-content: center;
 }
@@ -44,8 +47,13 @@ body {
     justify-content: center;
 }
 
-.patientWaiting{
+.patientWaitingRed{
     color: red;
+    font-weight: 500;
+}
+
+.patientWaitingBlue{
+    color: blue;
     font-weight: 500;
 }
 
@@ -53,13 +61,35 @@ body {
     color: white;
     text-shadow: 1px 2px #509d85;
 }
+.tbloverflow{
+    overflow: auto;
+    height: 220px;
+   
+}
 
+.tblHead{
+    margin: 0px 5px 0px 5px;
+}
+
+.tblRow {
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+}
+.tblRow:nth-child(odd){
+    background-color: #56917e;
+    color: white;
+}
+
+.spinner {
+    position: absolute;
+        width: 50px;
+}
 
 /* ////////////////////////////////    Footer */
 .footer{
-    position: fixed;
+    position: absolute;
     left:50%;
-    bottom: 20px;
+    /* bottom: 20px; */
     transform: translate(-50%,-50%);
     margin: 0 auto;
     /* position: absolute;
@@ -70,4 +100,70 @@ body {
 
 hr {
     border-width: 2px;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ///////////////// Mobile Version ////////////////*/
+@media only screen and (max-width: 900px){
+    .btnNext, .btnCancel, .btnNotAttend, .btnAttened{
+            width: auto;    
+    }
+
+    .doctorContainer{
+        display: block;
+    }
+
+    .notAttendedCancelled, .tokenRunningPart {
+        width: auto;
+    }
+
+    .btnAttened {
+        text-overflow: clip;
+    }
+
+    .tbloverflow{
+        overflow: auto;
+        height: 220px;
+        border: 2px solid white;
+        padding: 5px;
+    }
+
+    .tblHead{
+        position: absolute;
+        top: -9999px;        
+        left: -9999px;    
+       
+    }
+
+    .tblRow{
+        border: 1px solid #ccc;
+           
+    }
+
+    .colmn{
+           
+        border: none;
+        /* border-bottom: 1px solid #eee; */
+        padding: 5px;  
+        text-align: left;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .colmn:before{
+        position: absolute;
+	
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+    }
+
+    .colmn:nth-of-type(1):before { content: "Pateint :"; }
+	.colmn:nth-of-type(2):before { content: "Tokem # :"; }
+	.colmn:nth-of-type(3):before { content: "Phone :"; }
+    .colmn:nth-of-type(4):before { content: "Type :"; }
+	.colmn:nth-of-type(5):before { content: "Attended? :"; }
 }
