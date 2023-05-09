@@ -121,7 +121,7 @@ function TokenRunningPart() {
           >
             {jsonData.TokenNumber}
           </button>
-          <div className="row  my-3">
+          <div className="row my-3">
             <span
               className={
                 jsonData.Total_Remaining === 0

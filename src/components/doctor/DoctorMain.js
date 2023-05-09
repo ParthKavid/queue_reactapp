@@ -4,6 +4,8 @@ import NotAttendedCancelled from "./NotAttendedCancelled";
 import TokenRunningPart from "./TokenRunningPart";
 import Spinner from "../Spinner";
 import storeContext from "../../context/context";
+import Navibar from "../doctor/Navibar";
+import Footer from "./Footer";
 
 const DoctorMain = (props) => {
   //const [loader, setLoader] = useState(true);
@@ -41,6 +43,7 @@ const DoctorMain = (props) => {
 
   return (
     <>
+      <Navibar />
       <div className="main">
         <h2 className="headingStyle">Doctor</h2>
         {loader && <Spinner></Spinner>}
@@ -52,6 +55,7 @@ const DoctorMain = (props) => {
           <NotAttendedCancelled />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

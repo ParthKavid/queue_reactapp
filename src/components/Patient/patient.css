@@ -1,0 +1,22 @@
+.bgMain{
+    background-color: rgb(230, 236, 230);
+    margin-top:5px;
+}
+
+.bgcenter{
+    /* background-color: #7bc0a991; */
+    /* border-radius: 20px 20px 0px 0px; */
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.bgActiveToken{
+    background-color: #7bc0a9;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bgGetToken{
+    background-color: #2e4b42;
+    border-radius: 20px 20px 0px 0px;
+}

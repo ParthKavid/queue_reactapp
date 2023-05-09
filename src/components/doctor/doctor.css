@@ -1,8 +1,8 @@
-body {
+/* body {
     background-image: url("../../Images/doctor_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .navbar {
     background-color: #2e4b42 !important;
@@ -15,6 +15,7 @@ body {
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
+    text-align: center;
     
 }
 
